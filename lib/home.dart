@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 75),
+                padding: const EdgeInsets.only(top: 70),
                 child: Container(
                   height: 60,
                   width: 272,
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        backgroundColor: Color.fromARGB(255, 10, 117, 205),
+                        backgroundColor: Color.fromARGB(255, 5, 90, 201),
                       ),
                       child: Text(
                         "Find your Job",
