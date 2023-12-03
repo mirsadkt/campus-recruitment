@@ -17,6 +17,8 @@ class _MyHomePageState extends State<MyHomePage> {
       home: Scaffold(
         body: Column(
           children: [
+
+            
             SizedBox(
               height: 55,
               width: 300,
@@ -25,7 +27,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   print("Button Pressed");
                 },
                 child: Text("Find Your Job"),
-                
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Color.fromRGBO(2, 118, 234, 100),
                     shape: RoundedRectangleBorder(
