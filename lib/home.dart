@@ -22,7 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Padding(
                   padding: const EdgeInsets.only(top: 45),
                   child: Image(
-                    image: AssetImage("assets/imgtwo.png"),
+                    image: AssetImage("assets/imgone.jpg"),
                     height: 270,
                     width: 270,
                   ),
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Padding(
                 padding: const EdgeInsets.only(top: 70),
                 child: Text(
-                  "Take the first step towards your\ndream with our app",
+                  "Take the first step towards your\n        dream with our app",
                   style: TextStyle(
                     color: Color.fromARGB(255, 108, 105, 108),
                     fontWeight: FontWeight.w500,
