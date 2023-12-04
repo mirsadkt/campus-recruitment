@@ -16,7 +16,7 @@ class LandingPage extends StatelessWidget {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top:200),
+                padding: const EdgeInsets.only(top: 120),
                 child: Center(
                   child: Image(
                     image: AssetImage("assets/imgthree.png"),
@@ -26,56 +26,57 @@ class LandingPage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding:  EdgeInsets.only(top: 100),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding:  EdgeInsets.only(right: 20),
-                      child: Container(
+                padding: EdgeInsets.only(top: 30),
+                child: Center(
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(right: 35),
+                        child: Container(
+                          height: 50,
+                          width: 140,
+                          child: ElevatedButton(
+                            onPressed: () {
+                              print("Login Student");
+                            },
+                            child: Text(
+                              "Student Login",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color.fromARGB(255, 5, 90, 201),
+                              padding: EdgeInsets.all(5),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
                         height: 50,
                         width: 140,
                         child: ElevatedButton(
                           onPressed: () {
-                            print("Login Student");
+                            print("Login Company");
                           },
                           child: Text(
-                            "Student Login",
+                            "Company Login",
                             style: TextStyle(
                               fontWeight: FontWeight.w400,
                             ),
                           ),
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromARGB(255, 5, 90, 201),
-                            padding: EdgeInsets.all(5),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
+                              backgroundColor: Color.fromARGB(255, 5, 90, 201),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              )),
                         ),
-                      ),
-                    ),
-                    Container(
-                      height: 50,
-                      width: 140,
-                      child: ElevatedButton(
-                        onPressed: () {
-                          print("Login Company");
-                        },
-                        child: Text(
-                          "Company Login",
-                          style: TextStyle(
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromARGB(255, 5, 90, 201),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            )),
-                      ),
-                    )
-                  ],
+                      )
+                    ],
+                  ),
                 ),
               ),
             ],
