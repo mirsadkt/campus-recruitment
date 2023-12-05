@@ -1,6 +1,8 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print, prefer_interpolation_to_compose_strings
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print, prefer_interpolation_to_compose_strings, unused_import, sort_child_properties_last, avoid_unnecessary_containers, sized_box_for_whitespace
+import 'package:url_launcher/url_launcher.dart';
 
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
@@ -18,7 +20,7 @@ class _SignupPageState extends State<SignupPage> {
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Container(
-          padding: EdgeInsets.only(top: 80),
+          padding: EdgeInsets.only(top: 87),
           child: Center(
             child: Column(
               children: [
@@ -30,7 +32,7 @@ class _SignupPageState extends State<SignupPage> {
                       width: 160,
                       child: TextField(
                         onChanged: (String firstname) {
-                          print("Entered First Name: "+firstname);
+                          print("Entered First Name: " + firstname);
                         },
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
@@ -51,7 +53,7 @@ class _SignupPageState extends State<SignupPage> {
                       width: 160,
                       child: TextField(
                         onChanged: (String lastname) {
-                          print("Entered Last Name: "+lastname);
+                          print("Entered Last Name: " + lastname);
                         },
                         decoration: InputDecoration(
                             border: OutlineInputBorder(
@@ -69,7 +71,7 @@ class _SignupPageState extends State<SignupPage> {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 20),
+                  padding: EdgeInsets.only(top: 25),
                   child: SizedBox(
                     height: 50,
                     width: 335,
@@ -93,7 +95,7 @@ class _SignupPageState extends State<SignupPage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 20),
+                  padding: EdgeInsets.only(top: 25),
                   child: SizedBox(
                     height: 50,
                     width: 335,
@@ -118,7 +120,7 @@ class _SignupPageState extends State<SignupPage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 20),
+                  padding: EdgeInsets.only(top: 25),
                   child: SizedBox(
                     height: 50,
                     width: 335,
@@ -143,7 +145,7 @@ class _SignupPageState extends State<SignupPage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 20),
+                  padding: EdgeInsets.only(top: 25),
                   child: SizedBox(
                     height: 50,
                     width: 335,
@@ -168,15 +170,14 @@ class _SignupPageState extends State<SignupPage> {
                     ),
                   ),
                 ),
-
                 Padding(
-                  padding: EdgeInsets.only(top: 20),
+                  padding: EdgeInsets.only(top: 25),
                   child: SizedBox(
                     height: 50,
                     width: 335,
                     child: TextField(
                       onChanged: (String phone) {
-                        print("Entered value: " +phone );
+                        print("Entered value: " + phone);
                       },
                       keyboardType: TextInputType.phone,
                       decoration: InputDecoration(
@@ -194,8 +195,59 @@ class _SignupPageState extends State<SignupPage> {
                     ),
                   ),
                 ),
-
-
+                Padding(
+                  padding: const EdgeInsets.only(top: 30),
+                  child: Container(
+                    height: 43,
+                    width: 300,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        print("Pressed Proceed");
+                      },
+                      child: Text(
+                        "Proceed",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        backgroundColor: Colors.blue.shade800,
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 30),
+                  child: Center(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Already have an account?",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            print("Sign in Pressed");
+                          },
+                          child: Text(
+                            "Sign in",
+                            style: TextStyle(
+                                decoration: TextDecoration.underline,
+                                fontSize: 16),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
               ],
             ),
           ),
