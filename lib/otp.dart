@@ -129,10 +129,11 @@ class _OnetimePasswordState extends State<OnetimePassword> {
                         keyboardType: TextInputType.number,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(
-                                width: 4,
-                              ),),
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(
+                              width: 4,
+                            ),
+                          ),
                           contentPadding: EdgeInsets.all(10),
                         ),
                       ),
@@ -146,41 +147,45 @@ class _OnetimePasswordState extends State<OnetimePassword> {
               child: Container(
                 height: 43,
                 width: 200,
-                child: TextButton(onPressed: (){},
-                 child: Text("Proceed",
-                 style: TextStyle(
-                  fontSize: 18,
-                 ),
-                 ),
-                 style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.white,
-                  backgroundColor: Colors.blue.shade800,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+                child: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Proceed",
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
                   ),
-                 ),            
-                 ),
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.blue.shade800,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 17),
-              child: Text("Didn't recieve code?",
-              style: TextStyle(
-                fontWeight: FontWeight.w400,
-              ),
+              child: Text(
+                "Didn't recieve code?",
+                style: TextStyle(
+                  fontWeight: FontWeight.w400,
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: TextButton(onPressed: (){},
-               child: Text("Resend OTP",
-               style: TextStyle(
-                color: Colors.blue.shade800,
-                decoration: TextDecoration.underline, 
-               ),
-               
-               ),
-               ),
+              child: TextButton(
+                onPressed: () {},
+                child: Text(
+                  "Resend OTP",
+                  style: TextStyle(
+                    color: Colors.blue.shade800,
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+              ),
             ),
           ],
         ),
