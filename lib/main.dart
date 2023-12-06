@@ -1,10 +1,10 @@
 // ignore_for_file: unused_import
 
-import 'package:campus_recruitment/home.dart';
-import 'package:campus_recruitment/landing.dart';
-import 'package:campus_recruitment/otp.dart';
-import 'package:campus_recruitment/signup.dart';
-import 'package:campus_recruitment/tellaboutyourself.dart';
+import 'package:campus_recruitment/pages/home.dart';
+import 'package:campus_recruitment/pages/landing.dart';
+import 'package:campus_recruitment/pages/otp.dart';
+import 'package:campus_recruitment/pages/signup.dart';
+import 'package:campus_recruitment/pages/tellaboutyourself.dart';
 import 'package:flutter/material.dart';
 
 void main() {
