@@ -4,6 +4,7 @@ import 'package:campus_recruitment/home.dart';
 import 'package:campus_recruitment/landing.dart';
 import 'package:campus_recruitment/otp.dart';
 import 'package:campus_recruitment/signup.dart';
+import 'package:campus_recruitment/tellaboutyourself.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const OnetimePassword(),
+      home: const TellMore(),
     );
   }
 }
