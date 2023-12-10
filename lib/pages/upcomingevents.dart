@@ -119,7 +119,7 @@ class _EventsUpcomingState extends State<EventsUpcoming> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 40),
+              padding: EdgeInsets.only(top: 20),
               child: Container(
                 height: 115,
                 width: 330,
