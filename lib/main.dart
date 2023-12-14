@@ -3,6 +3,7 @@
 import 'package:campus_recruitment/pages/home.dart';
 import 'package:campus_recruitment/pages/landing.dart';
 import 'package:campus_recruitment/pages/nonotifications.dart';
+import 'package:campus_recruitment/pages/notification.dart';
 import 'package:campus_recruitment/pages/otp.dart';
 import 'package:campus_recruitment/pages/pastevents.dart';
 import 'package:campus_recruitment/pages/signup.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const NoNotify(),
+      home: const Notify(),
     );
   }
 }
