@@ -24,13 +24,13 @@ class _NotifyState extends State<Notify> {
             centerTitle: true,
             title: Padding(
               padding: EdgeInsets.only(top: 5),
-              child: Text("Notifications",
-              style: GoogleFonts.poppins(
-                fontWeight: FontWeight.w500,
-                fontSize: 20,
-                letterSpacing: 1,
-                color: Colors.black
-              ),
+              child: Text(
+                "Notifications",
+                style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 20,
+                    letterSpacing: 1,
+                    color: Colors.black),
               ),
             ),
             backgroundColor: Colors.white,
@@ -57,11 +57,11 @@ class _NotifyState extends State<Notify> {
                       ),
                     ),
                   ),
-                ), 
+                ),
               ],
             ),
           ),
-        ), 
+        ),
         body: Center(
           child: Column(
             children: [
@@ -80,166 +80,46 @@ class _NotifyState extends State<Notify> {
                         padding: const EdgeInsets.only(left: 10),
                         child: Container(
                           height: 50,
-                          width: 50,                     
+                          width: 50,
                           decoration: BoxDecoration(
-                            color:  Color.fromARGB(255, 255, 238, 247),
-                            borderRadius: BorderRadius.circular(10)
+                              color: Color.fromARGB(255, 255, 238, 247),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Icon(
+                            Icons.chat_rounded,
+                            color: Color.fromARGB(255, 237, 91, 5),
                           ),
-                          child: Icon(Icons.chat_rounded,
-                          color: Color.fromARGB(255, 237, 91, 5),),
                         ),
                       ),
                       Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(top: 18,left:15),
-                            child: Text("Google wants to Hire you.",
-                            style: GoogleFonts.poppins(
-                              letterSpacing: 1,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 14,
-                            ),
+                            padding: const EdgeInsets.only(top: 18, left: 15),
+                            child: Text(
+                              "Google wants to Hire you.",
+                              style: GoogleFonts.poppins(
+                                letterSpacing: 1,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                              ),
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(bottom: 10,right: 105),
+                            padding:
+                                const EdgeInsets.only(bottom: 10, right: 105),
                             child: Row(
                               children: [
-                                Icon(Icons.access_time_filled_sharp,
-                                color: Colors.black45,
-                                size: 12,
+                                Icon(
+                                  Icons.access_time_filled_sharp,
+                                  color: Colors.black45,
+                                  size: 12,
                                 ),
-                                Text("Just now",
-                                style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500,
-                                  letterSpacing: 1,
-                                  fontSize: 12,
-                                  color: Colors.black45
-                                ),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-              ),
-
-              Padding(
-                padding: const EdgeInsets.only(top: 20),
-                child: Container(
-                  height: 80,
-                  width: 330,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Color.fromARGB(61, 237, 234, 234),
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 50,
-                          width: 50,                     
-                          decoration: BoxDecoration(
-                            color:  Color.fromARGB(255, 229, 230, 251),
-                            borderRadius: BorderRadius.circular(10)
-                          ),
-                          child: Icon(Icons.credit_card,
-                          color: Colors.blue.shade800,),
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 18,left:15),
-                            child: Text("Google wants to Hire you.",
-                            style: GoogleFonts.poppins(
-                              letterSpacing: 1,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 14,
-                            ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 10,right: 105),
-                            child: Row(
-                              children: [
-                                Icon(Icons.access_time_filled_sharp,
-                                color: Colors.black45,
-                                size: 12,
-                                ),
-                                Text("Just now",
-                                style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500,
-                                  letterSpacing: 1,
-                                  fontSize: 12,
-                                  color: Colors.black45
-                                ),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-              ),
-
-              Padding(
-                padding: const EdgeInsets.only(top:20),
-                child: Container(
-                  height: 80,
-                  width: 330,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Color.fromARGB(61, 237, 234, 234),
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 50,
-                          width: 50,                     
-                          decoration: BoxDecoration(
-                            color:  Color.fromARGB(255, 255, 238, 247),
-                            borderRadius: BorderRadius.circular(10)
-                          ),
-                          child: Icon(Icons.chat_rounded,
-                          color: Color.fromARGB(255, 237, 91, 5),),
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 18,left:15),
-                            child: Text("Google wants to Hire you.",
-                            style: GoogleFonts.poppins(
-                              letterSpacing: 1,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 14,
-                            ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 10,right: 105),
-                            child: Row(
-                              children: [
-                                Icon(Icons.access_time_filled_sharp,
-                                color: Colors.black45,
-                                size: 12,
-                                ),
-                                Text("Just now",
-                                style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500,
-                                  letterSpacing: 1,
-                                  fontSize: 12,
-                                  color: Colors.black45
-                                ),
+                                Text(
+                                  "Just now",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w500,
+                                      letterSpacing: 1,
+                                      fontSize: 12,
+                                      color: Colors.black45),
                                 ),
                               ],
                             ),
@@ -265,42 +145,176 @@ class _NotifyState extends State<Notify> {
                         padding: const EdgeInsets.only(left: 10),
                         child: Container(
                           height: 50,
-                          width: 50,                     
+                          width: 50,
                           decoration: BoxDecoration(
-                            color:  Color.fromARGB(255, 229, 230, 251),
-                            borderRadius: BorderRadius.circular(10)
+                              color: Color.fromARGB(255, 229, 230, 251),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Icon(
+                            Icons.credit_card,
+                            color: Colors.blue.shade800,
                           ),
-                          child: Icon(Icons.credit_card,
-                          color: Colors.blue.shade800,),
                         ),
                       ),
                       Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(top: 18,left:15),
-                            child: Text("Google wants to Hire you.",
-                            style: GoogleFonts.poppins(
-                              letterSpacing: 1,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 14,
-                            ),
+                            padding: const EdgeInsets.only(top: 18, left: 15),
+                            child: Text(
+                              "Google wants to Hire you.",
+                              style: GoogleFonts.poppins(
+                                letterSpacing: 1,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                              ),
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(bottom: 10,right: 105),
+                            padding:
+                                const EdgeInsets.only(bottom: 10, right: 105),
                             child: Row(
                               children: [
-                                Icon(Icons.access_time_filled_sharp,
-                                color: Colors.black45,
-                                size: 12,
+                                Icon(
+                                  Icons.access_time_filled_sharp,
+                                  color: Colors.black45,
+                                  size: 12,
                                 ),
-                                Text("Just now",
-                                style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500,
-                                  letterSpacing: 1,
-                                  fontSize: 12,
-                                  color: Colors.black45
+                                Text(
+                                  "Just now",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w500,
+                                      letterSpacing: 1,
+                                      fontSize: 12,
+                                      color: Colors.black45),
                                 ),
+                              ],
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Container(
+                  height: 80,
+                  width: 330,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Color.fromARGB(61, 237, 234, 234),
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Container(
+                          height: 50,
+                          width: 50,
+                          decoration: BoxDecoration(
+                              color: Color.fromARGB(255, 255, 238, 247),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Icon(
+                            Icons.chat_rounded,
+                            color: Color.fromARGB(255, 237, 91, 5),
+                          ),
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(top: 18, left: 15),
+                            child: Text(
+                              "Google wants to Hire you.",
+                              style: GoogleFonts.poppins(
+                                letterSpacing: 1,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.only(bottom: 10, right: 105),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.access_time_filled_sharp,
+                                  color: Colors.black45,
+                                  size: 12,
+                                ),
+                                Text(
+                                  "Just now",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w500,
+                                      letterSpacing: 1,
+                                      fontSize: 12,
+                                      color: Colors.black45),
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Container(
+                  height: 80,
+                  width: 330,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Color.fromARGB(61, 237, 234, 234),
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Container(
+                          height: 50,
+                          width: 50,
+                          decoration: BoxDecoration(
+                              color: Color.fromARGB(255, 229, 230, 251),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Icon(
+                            Icons.credit_card,
+                            color: Colors.blue.shade800,
+                          ),
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(top: 18, left: 15),
+                            child: Text(
+                              "Google wants to Hire you.",
+                              style: GoogleFonts.poppins(
+                                letterSpacing: 1,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.only(bottom: 10, right: 105),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.access_time_filled_sharp,
+                                  color: Colors.black45,
+                                  size: 12,
+                                ),
+                                Text(
+                                  "Just now",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w500,
+                                      letterSpacing: 1,
+                                      fontSize: 12,
+                                      color: Colors.black45),
                                 ),
                               ],
                             ),
