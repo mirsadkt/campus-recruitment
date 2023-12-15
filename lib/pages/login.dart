@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, avoid_unnecessary_containers, sized_box_for_whitespace, unused_import, prefer_const_literals_to_create_immutables, prefer_interpolation_to_compose_strings, avoid_print
 
+import 'package:campus_recruitment/pages/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -124,6 +125,7 @@ class _LoginState extends State<Login> {
                     style: GoogleFonts.poppins(
                       letterSpacing: 1,
                       color: Colors.white,
+                      fontSize: 17 
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
@@ -148,7 +150,7 @@ class _LoginState extends State<Login> {
                   Padding(
                     padding: const EdgeInsets.only(top: 13),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context) => SignupPage() )),
                       child: Text(
                         "Sign Up",
                         style: GoogleFonts.poppins(

@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors, avoid_print, sort_child_properties_last, avoid_unnecessary_containers, sized_box_for_whitespace
 
+import 'package:campus_recruitment/pages/login.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
@@ -25,47 +27,45 @@ class LandingPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 30),
-                child: Center(
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 140),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Padding(
-                        padding: EdgeInsets.only(right: 35),
-                        child: Container(
-                          height: 50,
-                          width: 140,
-                          child: ElevatedButton(
-                            onPressed: () {
-                              print("Login Student");
-                            },
-                            child: Text(
-                              "Student Login",
-                              style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                              ),
+                      Container(
+                        height: 50,
+                        width: 150,
+                        child: ElevatedButton(
+                          onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Login(),
+                          ),
+                          ),
+                          child: Text(
+                            "Student Login",
+                            style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.w500
                             ),
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Color.fromARGB(255, 5, 90, 201),
-                              padding: EdgeInsets.all(5),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10),
-                              ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Color.fromARGB(255, 5, 90, 201),
+                            padding: EdgeInsets.all(5),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
                             ),
                           ),
                         ),
                       ),
                       Container(
                         height: 50,
-                        width: 140,
+                        width: 150,
                         child: ElevatedButton(
                           onPressed: () {
                             print("Login Company");
                           },
                           child: Text(
                             "Company Login",
-                            style: TextStyle(
-                              fontWeight: FontWeight.w400,
+                            style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.w500
                             ),
                           ),
                           style: ElevatedButton.styleFrom(

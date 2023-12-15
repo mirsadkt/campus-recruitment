@@ -1,4 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print, prefer_interpolation_to_compose_strings, unused_import, sort_child_properties_last, avoid_unnecessary_containers, sized_box_for_whitespace
+import 'package:campus_recruitment/pages/login.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher_string.dart';
@@ -23,38 +25,18 @@ class _SignupPageState extends State<SignupPage> {
           child: Center(
             child: Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    SizedBox(
-                      height: 50,
-                      width: 160,
-                      child: TextField(
-                        onChanged: (String firstname) {
-                          print("Entered First Name: " + firstname);
-                        },
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Colors.blue.shade800,
-                              width: 4,
-                            ),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          contentPadding: EdgeInsets.all(10),
-                          labelText: "First Name",
-                          hintText: "Enter First Name",
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 50,
-                      width: 160,
-                      child: TextField(
-                        onChanged: (String lastname) {
-                          print("Entered Last Name: " + lastname);
-                        },
-                        decoration: InputDecoration(
+                Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SizedBox(
+                        height: 50,
+                        width: 160,
+                        child: TextField(
+                          onChanged: (String firstname) {
+                            print("Entered First Name: " + firstname);
+                          },
+                          decoration: InputDecoration(
                             border: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: Colors.blue.shade800,
@@ -63,11 +45,42 @@ class _SignupPageState extends State<SignupPage> {
                               borderRadius: BorderRadius.circular(10),
                             ),
                             contentPadding: EdgeInsets.all(10),
-                            labelText: "Last Name",
-                            hintText: "Enter Last Name"),
+                            label: Text("First Name",
+                            style: GoogleFonts.poppins(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w400,
+                            ),
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        height: 50,
+                        width: 160,
+                        child: TextField(
+                          onChanged: (String lastname) {
+                            print("Entered Last Name: " + lastname);
+                          },
+                          decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.blue.shade800,
+                                  width: 4,
+                                ),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              contentPadding: EdgeInsets.all(10),
+                              label: Text("Last Name",
+                              style: GoogleFonts.poppins(
+                                fontSize: 15,
+                              fontWeight: FontWeight.w400,
+                              ),
+                              ),
+                              ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 25),
@@ -88,8 +101,13 @@ class _SignupPageState extends State<SignupPage> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           contentPadding: EdgeInsets.all(10),
-                          labelText: "Email",
-                          hintText: "Enter your Email"),
+                          label: Text("Email",
+                          style:GoogleFonts.poppins(
+                            fontSize: 15,
+                              fontWeight: FontWeight.w400,
+                          )
+                          ),
+                         ),
                     ),
                   ),
                 ),
@@ -112,8 +130,11 @@ class _SignupPageState extends State<SignupPage> {
                           ),
                         ),
                         contentPadding: EdgeInsets.all(10),
-                        labelText: "Password",
-                        hintText: "Enter a Password",
+                        label: Text("Password",
+                        style: GoogleFonts.poppins(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w400,
+                        ),),
                       ),
                     ),
                   ),
@@ -137,8 +158,11 @@ class _SignupPageState extends State<SignupPage> {
                           ),
                         ),
                         contentPadding: EdgeInsets.all(10),
-                        labelText: "Confirm Password",
-                        hintText: "Confirm your Password",
+                        label:Text("Confirm Password",
+                        style: GoogleFonts.poppins(
+                          fontSize: 15,
+                              fontWeight: FontWeight.w400,
+                        ),),
                       ),
                     ),
                   ),
@@ -163,8 +187,12 @@ class _SignupPageState extends State<SignupPage> {
                           ),
                         ),
                         contentPadding: EdgeInsets.all(10),
-                        labelText: "Date of Birth",
-                        hintText: "DD/MM/YYYY",
+                        label: Text("Date of Birth",
+                        style: GoogleFonts.poppins(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w400,
+                        ),),
+                        
                       ),
                     ),
                   ),
@@ -188,8 +216,11 @@ class _SignupPageState extends State<SignupPage> {
                           ),
                         ),
                         contentPadding: EdgeInsets.all(10),
-                        labelText: "Phone Number",
-                        hintText: "Enter your Phone Number ",
+                        label: Text("Phone number",
+                        style: GoogleFonts.poppins(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w400,
+                        ),),
                       ),
                     ),
                   ),
@@ -200,14 +231,17 @@ class _SignupPageState extends State<SignupPage> {
                     height: 43,
                     width: 300,
                     child: ElevatedButton(
-                      onPressed: () {
-                        print("Pressed Proceed");
-                      },
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Login(),
+                        ),
+                      ),
                       child: Text(
                         "Proceed",
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           fontSize: 16,
-                          fontWeight: FontWeight.w400,
+                          fontWeight: FontWeight.w400
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
@@ -227,20 +261,23 @@ class _SignupPageState extends State<SignupPage> {
                       children: [
                         Text(
                           "Already have an account?",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 16,
+                          style: GoogleFonts.poppins(
+                            fontSize: 16
                           ),
                         ),
                         TextButton(
-                          onPressed: () {
-                            print("Sign in Pressed");
-                          },
+                          onPressed: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Login(),
+                            ),
+                          ),
                           child: Text(
                             "Sign in",
-                            style: TextStyle(
-                                decoration: TextDecoration.underline,
-                                fontSize: 16),
+                            style: GoogleFonts.poppins(
+                              decoration: TextDecoration.underline,
+                              fontSize: 16
+                            ),
                           ),
                         ),
                       ],
