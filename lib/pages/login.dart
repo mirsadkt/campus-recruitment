@@ -197,7 +197,7 @@ class _LoginState extends State<Login> {
                           fontWeight: FontWeight.w500,
                           fontSize: 15,
                         ),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -206,37 +206,39 @@ class _LoginState extends State<Login> {
 
               Padding(
                 padding: const EdgeInsets.only(top: 10),
-                child: Container(
-                  height: 50,
-                  width: 250,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Color.fromARGB(60, 146, 144, 144),
-                      width: 1,
+                child: InkWell(                 
+                  child: Container(
+                    height: 50,
+                    width: 250,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Color.fromARGB(60, 146, 144, 144),
+                        width: 1,
+                      ),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: InkWell(
-                      
-                      child: Container(
-                        height: 20,
-                        width: 20,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Image(image: AssetImage("assets/facebook.png"),
-                            ),
-                            Text("Sign with Facebook",
-                            style: GoogleFonts.poppins(
-                              letterSpacing: 1,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 15,
-                            ),
-                            ),
-                          ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: InkWell(
+                        
+                        child: Container(
+                          height: 20,
+                          width: 20,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Image(image: AssetImage("assets/facebook.png"),
+                              ),
+                              Text("Sign with Facebook",
+                              style: GoogleFonts.poppins(
+                                letterSpacing: 1,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 15,
+                              ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
