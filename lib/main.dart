@@ -1,16 +1,17 @@
 // ignore_for_file: unused_import
 
-import 'package:campus_recruitment/pages/home.dart';
-import 'package:campus_recruitment/pages/landing.dart';
-import 'package:campus_recruitment/pages/login.dart';
-import 'package:campus_recruitment/pages/noevents.dart';
-import 'package:campus_recruitment/pages/nonotifications.dart';
-import 'package:campus_recruitment/pages/notification.dart';
-import 'package:campus_recruitment/pages/otp.dart';
-import 'package:campus_recruitment/pages/pastevents.dart';
-import 'package:campus_recruitment/pages/signup.dart';
-import 'package:campus_recruitment/pages/tellaboutyourself.dart';
-import 'package:campus_recruitment/pages/upcomingevents.dart';
+import 'package:campus_recruitment/pages/Introduction/introduction.dart';
+import 'package:campus_recruitment/pages/Landing/landing.dart';
+import 'package:campus_recruitment/pages/Login/login.dart';
+import 'package:campus_recruitment/pages/Saved%20Jobs/savedjobs.dart';
+import 'package:campus_recruitment/pages/events/noevents.dart';
+import 'package:campus_recruitment/pages/Notification/nonotifications.dart';
+import 'package:campus_recruitment/pages/Notification/notification.dart';
+import 'package:campus_recruitment/pages/otp/otp.dart';
+import 'package:campus_recruitment/pages/events/pastevents.dart';
+import 'package:campus_recruitment/pages/signup/signup.dart';
+import 'package:campus_recruitment/pages/signup/tellaboutyourself.dart';
+import 'package:campus_recruitment/pages/events/upcomingevents.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SignupPage(),
+      home: const SavedJobs(),
     );
   }
 }

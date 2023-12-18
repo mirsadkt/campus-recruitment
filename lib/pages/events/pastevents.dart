@@ -1,16 +1,17 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace, sort_child_properties_last, avoid_print, unused_import, unnecessary_import
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, sort_child_properties_last, avoid_print, prefer_const_literals_to_create_immutables
 
+import 'package:campus_recruitment/pages/events/upcomingevents.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class EventsUpcoming extends StatefulWidget {
-  const EventsUpcoming({super.key});
+class PastEvents extends StatefulWidget {
+  const PastEvents({super.key});
 
   @override
-  State<EventsUpcoming> createState() => _EventsUpcomingState();
+  State<PastEvents> createState() => _PastEventsState();
 }
 
-class _EventsUpcomingState extends State<EventsUpcoming> {
+class _PastEventsState extends State<PastEvents> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -38,10 +39,13 @@ class _EventsUpcomingState extends State<EventsUpcoming> {
                           print("Back Button Pressed ");
                         },
                         child: Center(
-                          child: Icon(
-                            Icons.arrow_back_ios,
-                            size: 14,
-                            weight: 40,
+                          child: Padding(
+                            padding: EdgeInsets.only(right: 30),
+                            child: Icon(
+                              Icons.arrow_back_ios,
+                              size: 14,
+                              weight: 40,
+                            ),
                           ),
                         ),
                         style: ElevatedButton.styleFrom(
@@ -69,7 +73,7 @@ class _EventsUpcomingState extends State<EventsUpcoming> {
           children: [
             Align(
               child: Padding(
-                padding: const EdgeInsets.only(top: 20),
+                padding: EdgeInsets.only(top: 20),
                 child: Container(
                   height: 46,
                   width: 310,
@@ -79,106 +83,44 @@ class _EventsUpcomingState extends State<EventsUpcoming> {
                   child: Row(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(left: 6),
-                        child: Container(
-                          height: 35,
-                          width: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(30),
-                            color: Colors.white,
+                        padding: EdgeInsets.only(top: 3, left: 14),
+                        child: TextButton(
+                          onPressed: () => Navigator.push(
+                            context,MaterialPageRoute(builder: (context) => EventsUpcoming()) 
                           ),
-                          child: Padding(
-                            padding: EdgeInsets.only(left: 20, top: 5),
-                            child: Text(
-                              "UPCOMING",
-                              style: GoogleFonts.poppins(
-                                fontWeight: FontWeight.w600,
-                                letterSpacing: 2,
-                                color: Colors.blue.shade800,
-                                fontSize: 15,
-                              ),
+                          child: Text(
+                            "UPCOMING",
+                            style: GoogleFonts.poppins(
+                              letterSpacing: 2,
+                              color: Colors.black38,
+                              fontWeight: FontWeight.w700,
                             ),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 15),
-                        child: Text(
-                          "PAST EVENTS",
-                          style: GoogleFonts.poppins(
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 2,
-                            color: Colors.black38,
-                            fontSize: 14,
+                        padding: const EdgeInsets.only(left: 30),
+                        child: Container(
+                          height: 35,
+                          width: 150,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(30),
+                              color: Colors.white),
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 8, left: 17),
+                            child: Text(
+                              "PAST EVENTS",
+                              style: GoogleFonts.poppins(
+                                fontWeight: FontWeight.w600,
+                                color: Colors.blue.shade800,
+                                letterSpacing: 2,
+                              ),
+                            ),
                           ),
                         ),
                       ),
                     ],
                   ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 20),
-              child: Container(
-                height: 115,
-                width: 330,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Color.fromARGB(35, 231, 229, 229),
-                ),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.all(9),
-                      child: Image(
-                        image: AssetImage("assets/jazz.png"),
-                        height: 90,
-                        width: 80,
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20, left: 16),
-                      child: Column(
-                        children: [
-                          Text(
-                            "1ST-MAY-SAT-2:00PM",
-                            style: GoogleFonts.poppins(
-                              fontWeight: FontWeight.w500,
-                              letterSpacing: 1,
-                              color: Colors.blue.shade800,
-                              fontSize: 16,
-                            ),
-                          ),
-                          Text(
-                            "Google Career Event",
-                            style: GoogleFonts.poppins(
-                              letterSpacing: 1,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black87,
-                              fontSize: 16,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Icon(
-                                Icons.location_on,
-                                size: 20,
-                                color: Colors.black26,
-                              ),
-                              Text(
-                                "Trivandrum ◆ Kerala",
-                                style: GoogleFonts.poppins(
-                                    color: Colors.black26,
-                                    letterSpacing: 1,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
                 ),
               ),
             ),

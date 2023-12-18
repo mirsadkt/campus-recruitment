@@ -1,5 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print, prefer_interpolation_to_compose_strings, unused_import, sort_child_properties_last, avoid_unnecessary_containers, sized_box_for_whitespace
-import 'package:campus_recruitment/pages/login.dart';
+import 'package:campus_recruitment/pages/Login/login.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
