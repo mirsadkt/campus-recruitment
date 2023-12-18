@@ -1,5 +1,7 @@
 // ignore_for_file: unused_import
 
+import 'package:campus_recruitment/pages/Applied%20Jobs/completed.dart';
+import 'package:campus_recruitment/pages/Applied%20Jobs/progressing.dart';
 import 'package:campus_recruitment/pages/Introduction/introduction.dart';
 import 'package:campus_recruitment/pages/Landing/landing.dart';
 import 'package:campus_recruitment/pages/Login/login.dart';
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SavedJobs(),
+      home: const AppliedjobsProgressing(),
     );
   }
 }
