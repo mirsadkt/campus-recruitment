@@ -45,7 +45,11 @@ class _AppliedjobsCompleteState extends State<AppliedjobsComplete> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         TextButton(
-                          onPressed: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>AppliedjobsProgressing())),
+                          onPressed: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      AppliedjobsProgressing())),
                           child: Text(
                             "Progressing",
                             style: GoogleFonts.poppins(
@@ -64,7 +68,10 @@ class _AppliedjobsCompleteState extends State<AppliedjobsComplete> {
                           ),
                         ),
                         TextButton(
-                          onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AppliedjobsUpcoming())),
+                          onPressed: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => AppliedjobsUpcoming())),
                           child: Text(
                             "Upcoming",
                             style: GoogleFonts.poppins(
@@ -108,7 +115,6 @@ class _AppliedjobsCompleteState extends State<AppliedjobsComplete> {
                   ),
                 ],
               ),
-             
               Padding(
                 padding: const EdgeInsets.only(top: 30),
                 child: Container(
