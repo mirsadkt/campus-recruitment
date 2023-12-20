@@ -2,6 +2,7 @@
 
 import 'package:campus_recruitment/pages/Applied%20Jobs/completed.dart';
 import 'package:campus_recruitment/pages/Applied%20Jobs/progressing.dart';
+import 'package:campus_recruitment/pages/Home%20Page/homepage.dart';
 import 'package:campus_recruitment/pages/Introduction/introduction.dart';
 import 'package:campus_recruitment/pages/Jobs%20Section/applyjob.dart';
 import 'package:campus_recruitment/pages/Jobs%20Section/jobinfo.dart';
@@ -18,6 +19,8 @@ import 'package:campus_recruitment/pages/signup/signup.dart';
 import 'package:campus_recruitment/pages/signup/tellaboutyourself.dart';
 import 'package:campus_recruitment/pages/events/upcomingevents.dart';
 import 'package:flutter/material.dart';
+
+import 'pages/Jobs Section/companyinfo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +39,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Applyjob(),
+      home: const HomePage(),
     );
   }
 }

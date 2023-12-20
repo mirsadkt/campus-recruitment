@@ -55,233 +55,236 @@ class _JobinfoState extends State<Jobinfo> {
             ),
           ),
         ),
-        body: Center(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 20),
-                child: Container(
-                  height: 70,
-                  width: 316,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        width: 1,
-                        color: Colors.black26,
-                      )),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15),
-                        child: Container(
-                          height: 40,
-                          width: 40,
-                          child: Image(
-                            image: AssetImage("assets/microsoft.png"),
+        body: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 20),
+                  child: Container(
+                    height: 70,
+                    width: 316,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(
+                          width: 1,
+                          color: Colors.black26,
+                        )),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 15),
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            child: Image(
+                              image: AssetImage("assets/microsoft.png"),
+                            ),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 15, left: 15),
-                        child: Column(
-                          children: [
-                            Text(
-                              "Front-End Dev",
-                              style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500, fontSize: 15),
-                            ),
-                            Text(
-                              "Full-Time",
-                              style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 13,
-                                  color: Colors.black54),
-                            ),
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.only(top: 15, left: 15),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Front-End Dev",
+                                style: GoogleFonts.poppins(
+                                    fontWeight: FontWeight.w500, fontSize: 15),
+                              ),
+                              Text(
+                                "Full-Time",
+                                style: GoogleFonts.poppins(
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 13,
+                                    color: Colors.black54),
+                              ),
+                            ],
+                          ),
                         ),
+                      ],
+                    ),
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20, left: 30),
+                      child: Text(
+                        "Salary",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500, color: Colors.black45),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20, right: 30),
+                      child: Text(
+                        " 450USD/Month",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500,
+                            color: Colors.blue.shade800),
+                      ),
+                    )
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10, left: 30),
+                      child: Text(
+                        "Type",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500, color: Colors.black45),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10, right: 30),
+                      child: Text(
+                        "Full-Time",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500,
+                            color: Colors.blue.shade800),
+                      ),
+                    )
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10, left: 30),
+                      child: Text(
+                        "Location",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500, color: Colors.black45),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10, right: 30),
+                      child: Text(
+                        "California,USA",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500,
+                            color: Colors.blue.shade800),
+                      ),
+                    )
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 20),
+                  child: Container(
+                    height: 1,
+                    width: 318,
+                    color: Colors.black26,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 16, left: 12),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Requirements",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500, fontSize: 20),
                       ),
                     ],
                   ),
                 ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20, left: 30),
-                    child: Text(
-                      "Salary",
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500, color: Colors.black45),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20, right: 30),
-                    child: Text(
-                      " 450USD/Month",
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500,
-                          color: Colors.blue.shade800),
-                    ),
-                  )
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10, left: 30),
-                    child: Text(
-                      "Type",
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500, color: Colors.black45),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10, right: 30),
-                    child: Text(
-                      "Full-Time",
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500,
-                          color: Colors.blue.shade800),
-                    ),
-                  )
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10, left: 30),
-                    child: Text(
-                      "Location",
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500, color: Colors.black45),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10, right: 30),
-                    child: Text(
-                      "California,USA",
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500,
-                          color: Colors.blue.shade800),
-                    ),
-                  )
-                ],
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 20),
-                child: Container(
-                  height: 1,
-                  width: 318,
-                  color: Colors.black26,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 16, left: 12),
-                child: Row(
-                  children: [
-                    Text(
-                      "Requirements",
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500, fontSize: 20),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 10, left: 12),
-                child: Row(
-                  children: [
-                    Text(
-                      "Exceptional with communication skills and \n team-working skill.",
-                      style: GoogleFonts.poppins(
-                          color: Colors.black45,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 13),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8, left: 12),
-                child: Row(
-                  children: [
-                    Text(
-                      "Formulate good design ideas and propose \n solutions to increased product.",
-                      style: GoogleFonts.poppins(
-                          color: Colors.black45,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 13),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8, left: 12),
-                child: Row(
-                  children: [
-                    Text(
-                      "You have at least 3 years of experience in a \n similar role.",
-                      style: GoogleFonts.poppins(
-                          color: Colors.black45,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 13),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 23, left: 12),
-                child: Row(
-                  children: [
-                    Text(
-                      "Skills Needed",
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500, fontSize: 20),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8, left: 13),
-                child: Row(
-                  children: [
-                    Text(
-                      "Design-Thinking ∙ Problem-Solving ∙ UX Design",
-                      style: GoogleFonts.poppins(
-                          color: Colors.black45,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 13),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 18),
-                child: InkWell(
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>Applyjob())),
-                  child: Container(
-                    width: 248,
-                    height: 51,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.blue.shade800,
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Apply Now",
+                Padding(
+                  padding: const EdgeInsets.only(top: 10, left: 12),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Exceptional with communication skills and \n team-working skill.",
                         style: GoogleFonts.poppins(
-                            fontWeight: FontWeight.w400,
-                            color: Colors.white,
-                            fontSize: 16),
+                            color: Colors.black45,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8, left: 12),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Formulate good design ideas and propose \n solutions to increased product.",
+                        style: GoogleFonts.poppins(
+                            color: Colors.black45,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8, left: 12),
+                  child: Row(
+                    children: [
+                      Text(
+                        "You have at least 3 years of experience in a \n similar role.",
+                        style: GoogleFonts.poppins(
+                            color: Colors.black45,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 23, left: 12),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Skills Needed",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500, fontSize: 20),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8, left: 13),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Design-Thinking ∙ Problem-Solving ∙ UX Design",
+                        style: GoogleFonts.poppins(
+                            color: Colors.black45,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 18),
+                  child: InkWell(
+                    onTap: () => Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Applyjob())),
+                    child: Container(
+                      width: 248,
+                      height: 51,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.blue.shade800,
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Apply Now",
+                          style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.w400,
+                              color: Colors.white,
+                              fontSize: 16),
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
