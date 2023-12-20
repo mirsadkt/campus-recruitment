@@ -53,7 +53,11 @@ class _AppliedjobsProgressingState extends State<AppliedjobsProgressing> {
                           ),
                         ),
                         TextButton(
-                          onPressed: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=>AppliedjobsComplete()),),
+                          onPressed: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => AppliedjobsComplete()),
+                          ),
                           child: Text(
                             "Completed",
                             style: GoogleFonts.poppins(
@@ -64,7 +68,10 @@ class _AppliedjobsProgressingState extends State<AppliedjobsProgressing> {
                           ),
                         ),
                         TextButton(
-                          onPressed: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>AppliedjobsUpcoming())),
+                          onPressed: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => AppliedjobsUpcoming())),
                           child: Text(
                             "Upcoming",
                             style: GoogleFonts.poppins(

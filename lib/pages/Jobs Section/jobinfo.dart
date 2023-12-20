@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace
 
+import 'package:campus_recruitment/pages/Jobs%20Section/applyjob.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -260,6 +261,7 @@ class _JobinfoState extends State<Jobinfo> {
               Padding(
                 padding: const EdgeInsets.only(top: 18),
                 child: InkWell(
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>Applyjob())),
                   child: Container(
                     width: 248,
                     height: 51,
