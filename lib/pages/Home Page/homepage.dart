@@ -1,5 +1,6 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace, unused_import, prefer_interpolation_to_compose_strings, avoid_print
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace, unused_import, prefer_interpolation_to_compose_strings, avoid_print, non_constant_identifier_names
 
+import 'package:campus_recruitment/pages/Home%20Page/joblist.dart';
 import 'package:campus_recruitment/pages/Notification/notification.dart';
 import 'package:campus_recruitment/pages/Saved%20Jobs/savedjobs.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +12,8 @@ class HomePage extends StatefulWidget {
   @override
   State<HomePage> createState() => _HomePageState();
 }
+
+int IndexNum = 0;
 
 class _HomePageState extends State<HomePage> {
   @override
@@ -25,7 +28,7 @@ class _HomePageState extends State<HomePage> {
           child: AppBar(
             backgroundColor: Colors.white,
             elevation: 0,
-        
+
             // title: Text("Welcome",
             // style: GoogleFonts.poppins(
             //   fontWeight: FontWeight.w600,
@@ -478,50 +481,57 @@ class _HomePageState extends State<HomePage> {
                         height: 255,
                         width: 237,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: const Color.fromARGB(186, 241, 239, 239)
-                        ),
+                            borderRadius: BorderRadius.circular(20),
+                            color: const Color.fromARGB(186, 241, 239, 239)),
                         child: Column(
                           children: [
                             Padding(
                               padding: const EdgeInsets.only(top: 13),
-                              child: Image(image: AssetImage("assets/eventone.png")),
+                              child: Image(
+                                  image: AssetImage("assets/eventone.png")),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 8),
-                              child: Text("Career Guidance Workshop",
-                              style: GoogleFonts.poppins(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 15,
-                                color: Colors.black
-                              ),),
+                              child: Text(
+                                "Career Guidance Workshop",
+                                style: GoogleFonts.poppins(
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 15,
+                                    color: Colors.black),
+                              ),
                             ),
                             Row(
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.all(11.0),
-                                  child: Image(image: AssetImage("assets/avatargroup.png")),
+                                  child: Image(
+                                      image:
+                                          AssetImage("assets/avatargroup.png")),
                                 ),
-                                Text("+20 Going",
-                                style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.purple.shade600
-                                ),)
+                                Text(
+                                  "+20 Going",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.purple.shade600),
+                                )
                               ],
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: 8),
                               child: Row(
                                 children: [
-                                  Icon(Icons.location_on,
-                                  size: 15,
-                                  color: Colors.black45,),
-                                  Text("Trivandrum,Kerala",
-                                  style: GoogleFonts.poppins(
+                                  Icon(
+                                    Icons.location_on,
+                                    size: 15,
                                     color: Colors.black45,
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 15
-                                  ),)
+                                  ),
+                                  Text(
+                                    "Trivandrum,Kerala",
+                                    style: GoogleFonts.poppins(
+                                        color: Colors.black45,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 15),
+                                  )
                                 ],
                               ),
                             ),
@@ -535,50 +545,57 @@ class _HomePageState extends State<HomePage> {
                         height: 255,
                         width: 237,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: const Color.fromARGB(186, 241, 239, 239)
-                        ),
+                            borderRadius: BorderRadius.circular(20),
+                            color: const Color.fromARGB(186, 241, 239, 239)),
                         child: Column(
                           children: [
                             Padding(
                               padding: const EdgeInsets.only(top: 13),
-                              child: Image(image: AssetImage("assets/eventwo.png")),
+                              child: Image(
+                                  image: AssetImage("assets/eventwo.png")),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 8),
-                              child: Text("Career Guidance Workshop",
-                              style: GoogleFonts.poppins(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 15,
-                                color: Colors.black
-                              ),),
+                              child: Text(
+                                "Career Guidance Workshop",
+                                style: GoogleFonts.poppins(
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 15,
+                                    color: Colors.black),
+                              ),
                             ),
                             Row(
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.all(11.0),
-                                  child: Image(image: AssetImage("assets/avatargroup.png")),
+                                  child: Image(
+                                      image:
+                                          AssetImage("assets/avatargroup.png")),
                                 ),
-                                Text("+20 Going",
-                                style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.purple.shade600
-                                ),)
+                                Text(
+                                  "+20 Going",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.purple.shade600),
+                                )
                               ],
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: 8),
                               child: Row(
                                 children: [
-                                  Icon(Icons.location_on,
-                                  size: 15,
-                                  color: Colors.black45,),
-                                  Text("Trivandrum,Kerala",
-                                  style: GoogleFonts.poppins(
+                                  Icon(
+                                    Icons.location_on,
+                                    size: 15,
                                     color: Colors.black45,
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 15
-                                  ),)
+                                  ),
+                                  Text(
+                                    "Trivandrum,Kerala",
+                                    style: GoogleFonts.poppins(
+                                        color: Colors.black45,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 15),
+                                  )
                                 ],
                               ),
                             ),
@@ -592,50 +609,57 @@ class _HomePageState extends State<HomePage> {
                         height: 255,
                         width: 237,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: const Color.fromARGB(186, 241, 239, 239)
-                        ),
+                            borderRadius: BorderRadius.circular(20),
+                            color: const Color.fromARGB(186, 241, 239, 239)),
                         child: Column(
                           children: [
                             Padding(
                               padding: const EdgeInsets.only(top: 13),
-                              child: Image(image: AssetImage("assets/eventone.png")),
+                              child: Image(
+                                  image: AssetImage("assets/eventone.png")),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 8),
-                              child: Text("Career Guidance Workshop",
-                              style: GoogleFonts.poppins(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 15,
-                                color: Colors.black
-                              ),),
+                              child: Text(
+                                "Career Guidance Workshop",
+                                style: GoogleFonts.poppins(
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 15,
+                                    color: Colors.black),
+                              ),
                             ),
                             Row(
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.all(11.0),
-                                  child: Image(image: AssetImage("assets/avatargroup.png")),
+                                  child: Image(
+                                      image:
+                                          AssetImage("assets/avatargroup.png")),
                                 ),
-                                Text("+20 Going",
-                                style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.purple.shade600
-                                ),)
+                                Text(
+                                  "+20 Going",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.purple.shade600),
+                                )
                               ],
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: 8),
                               child: Row(
                                 children: [
-                                  Icon(Icons.location_on,
-                                  size: 15,
-                                  color: Colors.black45,),
-                                  Text("Trivandrum,Kerala",
-                                  style: GoogleFonts.poppins(
+                                  Icon(
+                                    Icons.location_on,
+                                    size: 15,
                                     color: Colors.black45,
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 15
-                                  ),)
+                                  ),
+                                  Text(
+                                    "Trivandrum,Kerala",
+                                    style: GoogleFonts.poppins(
+                                        color: Colors.black45,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 15),
+                                  )
                                 ],
                               ),
                             ),
@@ -650,29 +674,42 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          iconSize: 26,
-          fixedColor: Colors.blue.shade800,
-          items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Home"
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.insights_outlined,
-            color: Colors.black45,),
-            label: "Jobs",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings_outlined,
-            color: Colors.black45,),
-            label: "Settings"
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle_outlined,
-            color: Colors.black45,),
-            label: "Profile"
-          )
-        ]),
+            iconSize: 26,
+            currentIndex: IndexNum,
+            onTap: (int index) {
+              setState(() {
+                IndexNum = index;
+              });
+            },
+            fixedColor: Colors.blue.shade800,
+            items: <BottomNavigationBarItem>[
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+              BottomNavigationBarItem(
+                icon: InkWell(
+                  onTap: () => Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => JobList())),
+                  child: Container(
+                    child: Icon(
+                      Icons.insights_outlined,
+                      color: Colors.black45,
+                    ),
+                  ),
+                ),
+                label: "Jobs",
+              ),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.settings_outlined,
+                    color: Colors.black45,
+                  ),
+                  label: "Settings"),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.account_circle_outlined,
+                    color: Colors.black45,
+                  ),
+                  label: "Profile")
+            ]),
       ),
     );
   }
