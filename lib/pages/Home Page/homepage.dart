@@ -3,6 +3,7 @@
 import 'package:campus_recruitment/pages/Home%20Page/joblist.dart';
 import 'package:campus_recruitment/pages/Notification/notification.dart';
 import 'package:campus_recruitment/pages/Saved%20Jobs/savedjobs.dart';
+import 'package:campus_recruitment/pages/Settings/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -29,12 +30,6 @@ class _HomePageState extends State<HomePage> {
             backgroundColor: Colors.white,
             elevation: 0,
 
-            // title: Text("Welcome",
-            // style: GoogleFonts.poppins(
-            //   fontWeight: FontWeight.w600,
-            //   color: Colors.black,
-            //   fontSize: 24
-            // ),),
           ),
         ),
         body: SingleChildScrollView(
@@ -674,7 +669,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-            iconSize: 26,
+            iconSize: 30,
             currentIndex: IndexNum,
             onTap: (int index) {
               setState(() {
@@ -698,9 +693,14 @@ class _HomePageState extends State<HomePage> {
                 label: "Jobs",
               ),
               BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.settings_outlined,
-                    color: Colors.black45,
+                  icon: InkWell(
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>Settings())),
+                    child: Container(
+                      child: Icon(
+                        Icons.settings_outlined,
+                        color: Colors.black45,
+                      ),
+                    ),
                   ),
                   label: "Settings"),
               BottomNavigationBarItem(
