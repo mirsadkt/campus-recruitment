@@ -649,6 +649,30 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
+        bottomNavigationBar: BottomNavigationBar(
+          iconSize: 26,
+          fixedColor: Colors.blue.shade800,
+          items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "Home"
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.insights_outlined,
+            color: Colors.black45,),
+            label: "Jobs",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings_outlined,
+            color: Colors.black45,),
+            label: "Settings"
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle_outlined,
+            color: Colors.black45,),
+            label: "Profile"
+          )
+        ]),
       ),
     );
   }
