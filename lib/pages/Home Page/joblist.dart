@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, non_constant_identifier_names, sized_box_for_whitespace, sort_child_properties_last
 
 import 'package:campus_recruitment/pages/Home%20Page/homepage.dart';
+import 'package:campus_recruitment/pages/Profile/profile.dart';
 import 'package:campus_recruitment/pages/Settings/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -71,8 +72,13 @@ class _JobListState extends State<JobList> {
                   ),
                   label: "Settings"),
               BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.account_circle_outlined,
+                icon: InkWell(
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Profile())),
+                  child: Container(
+                    child: Icon(
+                      Icons.account_circle_outlined,
+                    ),
+                  ),
                 ),
                 label: "Profile",
               ),

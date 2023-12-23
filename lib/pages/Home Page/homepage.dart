@@ -2,6 +2,7 @@
 
 import 'package:campus_recruitment/pages/Home%20Page/joblist.dart';
 import 'package:campus_recruitment/pages/Notification/notification.dart';
+import 'package:campus_recruitment/pages/Profile/profile.dart';
 import 'package:campus_recruitment/pages/Saved%20Jobs/savedjobs.dart';
 import 'package:campus_recruitment/pages/Settings/settings.dart';
 import 'package:flutter/material.dart';
@@ -704,9 +705,14 @@ class _HomePageState extends State<HomePage> {
                   ),
                   label: "Settings"),
               BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.account_circle_outlined,
-                    color: Colors.black45,
+                  icon: InkWell(
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>Profile())),
+                    child: Container(
+                      child: Icon(
+                        Icons.account_circle_outlined,
+                        color: Colors.black45,
+                      ),
+                    ),
                   ),
                   label: "Profile")
             ]),
