@@ -63,206 +63,208 @@ class _CompNotificationState extends State<CompNotification> {
           ),
         ),
         body: Center(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 20),
-                child: Container(
-                  height: 80,
-                  width: 330,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Color.fromARGB(61, 237, 234, 234),
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 50,
-                          width: 50,
-                          decoration: BoxDecoration(
-                              color: Color.fromARGB(189, 248, 206, 255),
-                              borderRadius: BorderRadius.circular(10)),
-                          child: Icon(
-                            Icons.chat_rounded,
-                            color:Colors.purple.shade600,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 20),
+                  child: Container(
+                    height: 80,
+                    width: 330,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(61, 237, 234, 234),
+                    ),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 10),
+                          child: Container(
+                            height: 50,
+                            width: 50,
+                            decoration: BoxDecoration(
+                                color: Color.fromARGB(189, 248, 206, 255),
+                                borderRadius: BorderRadius.circular(10)),
+                            child: Icon(
+                              Icons.chat_rounded,
+                              color:Colors.purple.shade600,
+                            ),
                           ),
                         ),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 18, left: 15),
-                            child: Text(
-                              "Student A wants to apply",
-                              style: GoogleFonts.poppins(
-                                letterSpacing: 1,
-                                fontWeight: FontWeight.w500,
-                                fontSize: 14,
+                        Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 18, left: 15),
+                              child: Text(
+                                "Student A wants to apply",
+                                style: GoogleFonts.poppins(
+                                  letterSpacing: 1,
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14,
+                                ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(bottom: 10, right: 105),
-                            child: Row(
-                              children: [
-                                Icon(
-                                  Icons.access_time_filled_sharp,
-                                  color: Colors.black45,
-                                  size: 12,
-                                ),
-                                Text(
-                                  "Just now",
-                                  style: GoogleFonts.poppins(
-                                      fontWeight: FontWeight.w500,
-                                      letterSpacing: 1,
-                                      fontSize: 12,
-                                      color: Colors.black45),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      )
-                    ],
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(bottom: 10, right: 105),
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.access_time_filled_sharp,
+                                    color: Colors.black45,
+                                    size: 12,
+                                  ),
+                                  Text(
+                                    "Just now",
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w500,
+                                        letterSpacing: 1,
+                                        fontSize: 12,
+                                        color: Colors.black45),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 20),
-                child: Container(
-                  height: 80,
-                  width: 330,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Color.fromARGB(61, 237, 234, 234),
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 50,
-                          width: 50,
-                          decoration: BoxDecoration(
-                              color: Color.fromARGB(189, 248, 206, 255),
-                              borderRadius: BorderRadius.circular(10)),
-                          child: Icon(
-                            Icons.credit_card,
-                            color: Colors.purple.shade600,
+                Padding(
+                  padding: const EdgeInsets.only(top: 20),
+                  child: Container(
+                    height: 80,
+                    width: 330,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(61, 237, 234, 234),
+                    ),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 10),
+                          child: Container(
+                            height: 50,
+                            width: 50,
+                            decoration: BoxDecoration(
+                                color: Color.fromARGB(189, 248, 206, 255),
+                                borderRadius: BorderRadius.circular(10)),
+                            child: Icon(
+                              Icons.credit_card,
+                              color: Colors.purple.shade600,
+                            ),
                           ),
                         ),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 18, left: 15),
-                            child: Text(
-                              "Student B wants to apply",
-                              style: GoogleFonts.poppins(
-                                letterSpacing: 1,
-                                fontWeight: FontWeight.w500,
-                                fontSize: 14,
+                        Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 18, left: 15),
+                              child: Text(
+                                "Student B wants to apply",
+                                style: GoogleFonts.poppins(
+                                  letterSpacing: 1,
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14,
+                                ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(bottom: 10, right: 105),
-                            child: Row(
-                              children: [
-                                Icon(
-                                  Icons.access_time_filled_sharp,
-                                  color: Colors.black45,
-                                  size: 12,
-                                ),
-                                Text(
-                                  "Just now",
-                                  style: GoogleFonts.poppins(
-                                      fontWeight: FontWeight.w500,
-                                      letterSpacing: 1,
-                                      fontSize: 12,
-                                      color: Colors.black45),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      )
-                    ],
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(bottom: 10, right: 105),
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.access_time_filled_sharp,
+                                    color: Colors.black45,
+                                    size: 12,
+                                  ),
+                                  Text(
+                                    "Just now",
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w500,
+                                        letterSpacing: 1,
+                                        fontSize: 12,
+                                        color: Colors.black45),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 20),
-                child: Container(
-                  height: 80,
-                  width: 330,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Color.fromARGB(61, 237, 234, 234),
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 50,
-                          width: 50,
-                          decoration: BoxDecoration(
-                              color: Color.fromARGB(189, 248, 206, 255),
-                              borderRadius: BorderRadius.circular(10)),
-                          child: Icon(
-                            Icons.chat_rounded,
-                            color: Colors.purple.shade600,
+                Padding(
+                  padding: const EdgeInsets.only(top: 20),
+                  child: Container(
+                    height: 80,
+                    width: 330,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(61, 237, 234, 234),
+                    ),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 10),
+                          child: Container(
+                            height: 50,
+                            width: 50,
+                            decoration: BoxDecoration(
+                                color: Color.fromARGB(189, 248, 206, 255),
+                                borderRadius: BorderRadius.circular(10)),
+                            child: Icon(
+                              Icons.chat_rounded,
+                              color: Colors.purple.shade600,
+                            ),
                           ),
                         ),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 13, left: 15),
-                            child: Text(
-                              "Student A has uploaded \nthe resume",
-                              style: GoogleFonts.poppins(
-                                letterSpacing: 1,
-                                fontWeight: FontWeight.w500,
-                                fontSize: 14,
+                        Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 13, left: 15),
+                              child: Text(
+                                "Student A has uploaded \nthe resume",
+                                style: GoogleFonts.poppins(
+                                  letterSpacing: 1,
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14,
+                                ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(bottom: 6, right: 105),
-                            child: Row(
-                              children: [
-                                Icon(
-                                  Icons.access_time_filled_sharp,
-                                  color: Colors.black45,
-                                  size: 12,
-                                ),
-                                Text(
-                                  "Just now",
-                                  style: GoogleFonts.poppins(
-                                      fontWeight: FontWeight.w500,
-                                      letterSpacing: 1,
-                                      fontSize: 12,
-                                      color: Colors.black45),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      )
-                    ],
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(bottom: 6, right: 105),
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.access_time_filled_sharp,
+                                    color: Colors.black45,
+                                    size: 12,
+                                  ),
+                                  Text(
+                                    "Just now",
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w500,
+                                        letterSpacing: 1,
+                                        fontSize: 12,
+                                        color: Colors.black45),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              
-                    
-            ],
+                
+                      
+              ],
+            ),
           ),
         ),
       ),
