@@ -1,16 +1,16 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_unnecessary_containers
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class BugReport extends StatefulWidget {
-  const BugReport({super.key});
+class CompBugreport extends StatefulWidget {
+  const CompBugreport({super.key});
 
   @override
-  State<BugReport> createState() => _BugReportState();
+  State<CompBugreport> createState() => _CompBugreportState();
 }
 
-class _BugReportState extends State<BugReport> {
+class _CompBugreportState extends State<CompBugreport> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,11 +29,11 @@ class _BugReportState extends State<BugReport> {
                  width: 35,
                  decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.blue.shade200
+                  color: Colors.purple.shade200
                  ),
                  child: Icon(Icons.arrow_back_ios,
                  size: 13,
-                 color: Colors.blue.shade800,), 
+                 color: Colors.purple.shade600,), 
                 ),
               ),
             ],
@@ -47,7 +47,7 @@ class _BugReportState extends State<BugReport> {
                   padding: const EdgeInsets.only(top: 10),
                   child: Icon(Icons.bug_report,
                   size: 105,
-                  color: Colors.blue.shade800,),
+                  color: Colors.purple.shade600,),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 20),
@@ -165,7 +165,7 @@ class _BugReportState extends State<BugReport> {
                         width: 96,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Colors.blue.shade800,
+                          color: Colors.purple.shade600,
                         ),
                         child: Center(
                           child: Text("Browse Files",
@@ -181,13 +181,13 @@ class _BugReportState extends State<BugReport> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 40),
+                  padding: const EdgeInsets.only(top: 40,bottom: 30),
                   child: Container(
                     height: 40,
                     width: 140,
                     decoration: BoxDecoration(
                       borderRadius:BorderRadius.circular(10),
-                      color: Colors.blue.shade800, 
+                      color: Colors.purple.shade600, 
                     ),
                     child: Center(
                       child: Text("Submit",

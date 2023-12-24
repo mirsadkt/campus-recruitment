@@ -1,5 +1,6 @@
 // ignore_for_file: unused_import
 
+import 'package:campus_recruitment/Company/Company%20Bug%20Report/bugreportcomp.dart';
 import 'package:campus_recruitment/Company/Signup%20and%20Login/companylogin.dart';
 import 'package:campus_recruitment/Company/Signup%20and%20Login/compsignup.dart';
 import 'package:campus_recruitment/Company/starting.dart';
@@ -49,7 +50,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CompSignup(),
+      home: const CompBugreport(),
     );
   }
 }
