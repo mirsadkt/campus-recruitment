@@ -1,29 +1,30 @@
-// ignore_for_file: avoid_print, prefer_const_constructors, avoid_unnecessary_containers, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_print
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class CompanyStarting extends StatefulWidget {
+  const CompanyStarting({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<CompanyStarting> createState() => _CompanyStartingState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _CompanyStartingState extends State<CompanyStarting> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          backgroundColor: Colors.white,
-          body: Column(
+        backgroundColor: Colors.white,
+        body: SingleChildScrollView(
+          child: Column(
             children: [
               Center(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 45),
                   child: Image(
-                    image: AssetImage("assets/imgone.jpg"),
+                    image: AssetImage("assets/compimgone.png"),
                     height: 270,
                     width: 270,
                   ),
@@ -33,15 +34,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: const EdgeInsets.only(top: 10),
                 child: Text("Welcome",
                     style: GoogleFonts.poppins(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.black
-                    )),
+                        fontWeight: FontWeight.w500, fontSize: 18)),
               ),
               Padding(
                 padding: const EdgeInsets.all(13.0),
                 child: Text(
-                  "Get Hired with ease using our app",
+                  "Recruitment App",
                   style: GoogleFonts.poppins(
                     fontWeight: FontWeight.w500,
                     fontSize: 18,
@@ -52,10 +50,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Padding(
                 padding: const EdgeInsets.only(top: 70),
                 child: Text(
-                  "Take the first step towards your\n        dream with our app",
+                  "Application for easy job search\n            and Job Provider",
                   style: GoogleFonts.poppins(
-                    color: Color.fromARGB(255, 108, 105, 108),
                     fontWeight: FontWeight.w500,
+                    color: Color.fromARGB(255, 108, 105, 108),
                     fontSize: 18
                   )
                 ),
@@ -73,19 +71,19 @@ class _MyHomePageState extends State<MyHomePage> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        backgroundColor: Color.fromARGB(255, 5, 90, 201),
+                        backgroundColor: Colors.purple.shade600,
                       ),
                       child: Text(
                         "Find your Job",
                         style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 18
-                        ),
+                            fontWeight: FontWeight.w500, fontSize: 16),
                       )),
                 ),
               )
             ],
-          )),
+          ),
+        ),
+      ),
     );
   }
 }

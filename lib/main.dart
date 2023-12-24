@@ -1,5 +1,8 @@
 // ignore_for_file: unused_import
 
+import 'package:campus_recruitment/Company/Signup%20and%20Login/companylogin.dart';
+import 'package:campus_recruitment/Company/Signup%20and%20Login/compsignup.dart';
+import 'package:campus_recruitment/Company/starting.dart';
 import 'package:campus_recruitment/pages/Applied%20Jobs/completed.dart';
 import 'package:campus_recruitment/pages/Applied%20Jobs/progressing.dart';
 import 'package:campus_recruitment/pages/Bug%20Report/bugreport.dart';
@@ -46,7 +49,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeFilter()
+      home: const CompSignup(),
     );
   }
 }
