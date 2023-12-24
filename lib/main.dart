@@ -7,6 +7,7 @@ import 'package:campus_recruitment/pages/Home%20Page/homepage.dart';
 import 'package:campus_recruitment/pages/Home%20Page/joblist.dart';
 import 'package:campus_recruitment/pages/Introduction/introduction.dart';
 import 'package:campus_recruitment/pages/Jobs%20Section/applyjob.dart';
+import 'package:campus_recruitment/pages/Jobs%20Section/jobapplied.dart';
 import 'package:campus_recruitment/pages/Jobs%20Section/jobinfo.dart';
 import 'package:campus_recruitment/pages/Jobs%20Section/jobs.dart';
 import 'package:campus_recruitment/pages/Landing/landing.dart';
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const BugReport()
+      home: const JobApplied()
     );
   }
 }
