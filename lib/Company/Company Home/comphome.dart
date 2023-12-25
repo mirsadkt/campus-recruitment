@@ -4,6 +4,8 @@ import 'package:campus_recruitment/Company/Company%20Settings/compsettings.dart'
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../Company Profile/compprofile.dart';
+
 class CompHome extends StatefulWidget {
   const CompHome({super.key});
 
@@ -54,8 +56,13 @@ class _CompHomeState extends State<CompHome> {
                   ),
                   label: "Settings"),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.account_circle_outlined,
-                      color: Colors.black45),
+                  icon: InkWell(
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CompProfile())),
+                    child: Container(
+                      child: Icon(Icons.account_circle_outlined,
+                          color: Colors.black45),
+                    ),
+                  ),
                   label: "Profile")
             ]),
         body: Column(

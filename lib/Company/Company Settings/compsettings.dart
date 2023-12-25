@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, non_constant_identifier_names, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
 
 import 'package:campus_recruitment/Company/Company%20Home/comphome.dart';
+import 'package:campus_recruitment/Company/Company%20Profile/compprofile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -56,8 +57,13 @@ class _CompSettingsState extends State<CompSettings> {
                   ),
                   label: "Settings"),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.account_circle_outlined,
-                      color: Colors.black45),
+                  icon: InkWell(
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CompProfile())),
+                    child: Container(
+                      child: Icon(Icons.account_circle_outlined,
+                          color: Colors.black45),
+                    ),
+                  ),
                   label: "Profile")
             ]),
         body: SingleChildScrollView(
