@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace
 
+import 'package:campus_recruitment/Company/Recent%20Applicants/recentapplicant.dart';
 import 'package:campus_recruitment/Company/Student%20details%20and%20Resume/resume.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -25,16 +26,19 @@ class _StudentDetailsState extends State<StudentDetails> {
             padding: const EdgeInsets.only(top: 10,left: 10),
             child: Row(
               children: [
-                Container(
-                  height: 35,
-                  width: 35,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.purple.shade200
-                  ),
-                  child: Icon(Icons.arrow_back_ios,
-                  size: 13,
-                  color: Colors.purple.shade600,
+                InkWell(
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => RecentApplicant())),
+                  child: Container(
+                    height: 35,
+                    width: 35,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.purple.shade200
+                    ),
+                    child: Icon(Icons.arrow_back_ios,
+                    size: 13,
+                    color: Colors.purple.shade600,
+                    ),
                   ),
                 ) 
               ],

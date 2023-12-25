@@ -10,6 +10,7 @@ import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobfour.dart';
 import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobone.dart';
 import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobthree.dart';
 import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobtwo.dart';
+import 'package:campus_recruitment/Company/Recent%20Applicants/recentapplicant.dart';
 import 'package:campus_recruitment/Company/Signup%20and%20Login/companylogin.dart';
 import 'package:campus_recruitment/Company/Signup%20and%20Login/compsignup.dart';
 import 'package:campus_recruitment/Company/Student%20details%20and%20Resume/resume.dart';
@@ -61,7 +62,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Resume(),
+      home: const RecentApplicant(),
     );
   }
 }

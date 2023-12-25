@@ -5,6 +5,8 @@ import 'package:campus_recruitment/Company/Company%20Profile/compprofile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../Recent Applicants/recentapplicant.dart';
+
 class CompSettings extends StatefulWidget {
   const CompSettings({super.key});
 
@@ -45,9 +47,14 @@ class _CompSettingsState extends State<CompSettings> {
                   ),
                   label: "Home"),
               BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.file_copy_outlined,
-                    color: Colors.black45,
+                  icon: InkWell(
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => RecentApplicant())),
+                    child: Container(
+                      child: Icon(
+                        Icons.file_copy_outlined,
+                        color: Colors.black45,
+                      ),
+                    ),
                   ),
                   label: "Applicants"),
               BottomNavigationBarItem(
