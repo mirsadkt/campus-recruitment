@@ -1,5 +1,6 @@
-// ignore_for_file: prefer_const_constructors, non_constant_identifier_names, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, non_constant_identifier_names, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_unnecessary_containers
 
+import 'package:campus_recruitment/Company/Company%20Settings/compsettings.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -42,9 +43,14 @@ class _CompHomeState extends State<CompHome> {
                   ),
                   label: "Applicants"),
               BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.settings_outlined,
-                    color: Colors.black45,
+                  icon: InkWell(
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CompSettings())),
+                    child: Container(
+                      child: Icon(
+                        Icons.settings_outlined,
+                        color: Colors.black45,
+                      ),
+                    ),
                   ),
                   label: "Settings"),
               BottomNavigationBarItem(
