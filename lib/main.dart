@@ -4,6 +4,10 @@ import 'package:campus_recruitment/Company/Company%20Bug%20Report/bugreportcomp.
 import 'package:campus_recruitment/Company/Company%20Home/comphome.dart';
 import 'package:campus_recruitment/Company/Company%20Home/comphomewithcontent.dart';
 import 'package:campus_recruitment/Company/Notification%20Company/notificationcomp.dart';
+import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobfour.dart';
+import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobone.dart';
+import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobthree.dart';
+import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobtwo.dart';
 import 'package:campus_recruitment/Company/Signup%20and%20Login/companylogin.dart';
 import 'package:campus_recruitment/Company/Signup%20and%20Login/compsignup.dart';
 import 'package:campus_recruitment/Company/starting.dart';
@@ -53,7 +57,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CompHomewithContent(),
+      home: const PostJobfour(),
     );
   }
 }
