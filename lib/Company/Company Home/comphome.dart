@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, non_constant_identifier_names, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_unnecessary_containers
 
 import 'package:campus_recruitment/Company/Company%20Settings/compsettings.dart';
+import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobone.dart';
 import 'package:campus_recruitment/Company/Recent%20Applicants/recentapplicant.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -121,20 +122,23 @@ class _CompHomeState extends State<CompHome> {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 40),
-              child: Container(
-                  height: 43,
-                  width: 268,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.purple.shade600),
-                  child: Center(
-                      child: Text(
-                    "Post a Job",
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 15,
-                        color: Colors.white),
-                  ))),
+              child: InkWell(
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => PostJobone())),
+                child: Container(
+                    height: 43,
+                    width: 268,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.purple.shade600),
+                    child: Center(
+                        child: Text(
+                      "Post a Job",
+                      style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 15,
+                          color: Colors.white),
+                    ))),
+              ),
             )
           ],
         ),

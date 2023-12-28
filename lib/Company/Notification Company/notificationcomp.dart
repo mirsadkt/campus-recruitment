@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, sort_child_properties_last, avoid_print
 
+import 'package:campus_recruitment/Company/Recent%20Applicants/recentapplicant.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -44,9 +45,7 @@ class _CompNotificationState extends State<CompNotification> {
                     height: 35,
                     width: 35,
                     child: ElevatedButton(
-                      onPressed: () {
-                        print("Button pressed");
-                      },
+                      onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => RecentApplicant())),
                       child: Icon(Icons.arrow_back_ios, size: 13),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.purple.shade200,
@@ -67,7 +66,7 @@ class _CompNotificationState extends State<CompNotification> {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 20),
+                  padding: const EdgeInsets.only(top: 10),
                   child: Container(
                     height: 80,
                     width: 330,

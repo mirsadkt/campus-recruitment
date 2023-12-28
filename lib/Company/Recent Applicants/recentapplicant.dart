@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace, non_constant_identifier_names
 
 import 'package:campus_recruitment/Company/Company%20Home/comphome.dart';
+import 'package:campus_recruitment/Company/Notification%20Company/notificationcomp.dart';
 import 'package:campus_recruitment/Company/Student%20details%20and%20Resume/studentdetails.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -114,10 +115,15 @@ class _RecentApplicantState extends State<RecentApplicant> {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(right: 13),
-                    child: Icon(
-                      Icons.notifications_none_outlined,
-                      size: 30,
-                      color: Colors.purple.shade600,
+                    child: InkWell(
+                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CompNotification())),
+                      child: Container(
+                        child: Icon(
+                          Icons.notifications_none_outlined,
+                          size: 30,
+                          color: Colors.purple.shade600,
+                        ),
+                      ),
                     ),
                   )
                 ],

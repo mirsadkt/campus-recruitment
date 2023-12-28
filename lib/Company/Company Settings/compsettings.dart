@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors, non_constant_identifier_names, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
 
+import 'package:campus_recruitment/Company/Company%20Bug%20Report/bugreportcomp.dart';
 import 'package:campus_recruitment/Company/Company%20Home/comphome.dart';
 import 'package:campus_recruitment/Company/Company%20Profile/compprofile.dart';
+import 'package:campus_recruitment/Company/Signup%20and%20Login/companylogin.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -127,19 +129,24 @@ class _CompSettingsState extends State<CompSettings> {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 15, left: 15),
-                        child: Column(
-                          children: [
-                            Text(
-                              "Google",
-                              style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500, fontSize: 20),
+                        child: InkWell(
+                          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CompProfile())),
+                          child: Container(
+                            child: Column(
+                              children: [
+                                Text(
+                                  "Google",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w500, fontSize: 20),
+                                ),
+                                Text(
+                                  "devgoogle@gmail.com",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w500, fontSize: 15),
+                                ),
+                              ],
                             ),
-                            Text(
-                              "devgoogle@gmail.com",
-                              style: GoogleFonts.poppins(
-                                  fontWeight: FontWeight.w500, fontSize: 15),
-                            ),
-                          ],
+                          ),
                         ),
                       )
                     ],
@@ -169,39 +176,44 @@ class _CompSettingsState extends State<CompSettings> {
                   )
                 ],
               ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10, top: 20),
-                    child: Icon(
-                      Icons.notifications_none_outlined,
-                      color: Colors.purple.shade600,
-                      size: 35,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20, left: 13),
-                    child: Text(
-                      "Notifications",
-                      style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 20,
+              InkWell(
+                child: Container(
+                  
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, top: 20),
+                        child: Icon(
+                          Icons.notifications_none_outlined,
+                          color: Colors.purple.shade600,
+                          size: 35,
+                        ),
                       ),
-                    ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20, left: 13),
+                        child: Text(
+                          "Notifications",
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20, right: 10),
+                        child: Switch(
+                          activeColor: Colors.purple.shade600,
+                            value: isSwitched,
+                            onChanged: (value) {
+                              setState(() {
+                                isSwitched = value;
+                              });
+                            }),
+                      )
+                    ],
                   ),
-                  Spacer(),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20, right: 10),
-                    child: Switch(
-                      activeColor: Colors.purple.shade600,
-                        value: isSwitched,
-                        onChanged: (value) {
-                          setState(() {
-                            isSwitched = value;
-                          });
-                        }),
-                  )
-                ],
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 3, left: 60),
@@ -246,32 +258,37 @@ class _CompSettingsState extends State<CompSettings> {
                   color: Colors.black12,
                 ),
               ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10, top: 20),
-                    child: Icon(
-                      Icons.bug_report_outlined,
-                      color: Colors.purple.shade600,
-                      size: 35,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20, left: 13),
-                    child: Text(
-                      "Report Bugs",
-                      style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 20,
+              InkWell(
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CompBugreport())),
+                child: Container(
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, top: 20),
+                        child: Icon(
+                          Icons.bug_report_outlined,
+                          color: Colors.purple.shade600,
+                          size: 35,
+                        ),
                       ),
-                    ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20, left: 13),
+                        child: Text(
+                          "Report Bugs",
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16, right: 20),
+                        child: Icon(Icons.arrow_forward_ios_rounded),
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 16, right: 20),
-                    child: Icon(Icons.arrow_forward_ios_rounded),
-                  ),
-                ],
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 10, left: 60),
@@ -281,32 +298,37 @@ class _CompSettingsState extends State<CompSettings> {
                   color: Colors.black12,
                 ),
               ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10, top: 20),
-                    child: Icon(
-                      Icons.logout_rounded,
-                      color: Colors.purple.shade600,
-                      size: 35,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20, left: 13),
-                    child: Text(
-                      "Logout",
-                      style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 20,
+              InkWell(
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CompLogin())),
+                child: Container(
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, top: 20),
+                        child: Icon(
+                          Icons.logout_rounded,
+                          color: Colors.purple.shade600,
+                          size: 35,
+                        ),
                       ),
-                    ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20, left: 13),
+                        child: Text(
+                          "Logout",
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16, right: 20),
+                        child: Icon(Icons.arrow_forward_ios_rounded),
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 16, right: 20),
-                    child: Icon(Icons.arrow_forward_ios_rounded),
-                  ),
-                ],
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 10, left: 60),

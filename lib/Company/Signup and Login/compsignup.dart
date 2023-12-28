@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, sized_box_for_whitespace, prefer_interpolation_to_compose_strings, avoid_print
 
+import 'package:campus_recruitment/Company/Signup%20and%20Login/companylogin.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -180,7 +181,7 @@ class _CompSignupState extends State<CompSignup> {
                       height: 43,
                       width: 300,
                       child: ElevatedButton(
-                        onPressed: (){},
+                        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CompLogin())),
                         child: Text(
                           "Proceed",
                           style: GoogleFonts.poppins(
@@ -210,7 +211,7 @@ class _CompSignupState extends State<CompSignup> {
                             ),
                           ),
                           TextButton(
-                            onPressed: (){},
+                            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CompLogin())),
                             child: Text(
                               "Sign in",
                               style: GoogleFonts.poppins(

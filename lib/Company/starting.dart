@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_print
 
+import 'package:campus_recruitment/Company/Signup%20and%20Login/companylogin.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -64,9 +65,7 @@ class _CompanyStartingState extends State<CompanyStarting> {
                   height: 60,
                   width: 272,
                   child: ElevatedButton(
-                      onPressed: () {
-                        print("Go to login ");
-                      },
+                      onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CompLogin())),
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
@@ -74,7 +73,7 @@ class _CompanyStartingState extends State<CompanyStarting> {
                         backgroundColor: Colors.purple.shade600,
                       ),
                       child: Text(
-                        "Find your Job",
+                        "Start Hiring",
                         style: GoogleFonts.poppins(
                             fontWeight: FontWeight.w500, fontSize: 16),
                       )),

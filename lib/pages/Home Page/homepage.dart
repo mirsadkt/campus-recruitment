@@ -104,6 +104,15 @@ class _HomePageState extends State<HomePage> {
                         fillColor: Color.fromARGB(252, 255, 255, 255),
                         filled: true,
                         contentPadding: EdgeInsets.all(10),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(width: 2,color: Colors.blue.shade800)
+                        ),
+
+                        disabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(width: 2,color: Colors.black45)
+                        ),
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20)),
                         prefixIcon: Icon(Icons.search),

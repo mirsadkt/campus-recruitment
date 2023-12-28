@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, avoid_unnecessary_containers, sized_box_for_whitespace, unused_import, prefer_const_literals_to_create_immutables, prefer_interpolation_to_compose_strings, avoid_print
 
+import 'package:campus_recruitment/pages/Home%20Page/homepage.dart';
+import 'package:campus_recruitment/pages/Landing/landing.dart';
 import 'package:campus_recruitment/pages/signup/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -28,21 +30,24 @@ class _LoginState extends State<Login> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 10, left: 10),
-                  child: Container(
-                    height: 40,
-                    width: 40,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: Icon(
-                        Icons.arrow_back_ios,
-                        size: 17,
+                  child: InkWell(
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LandingPage())),
+                    child: Container(
+                      height: 40,
+                      width: 40,
+                      child: ElevatedButton(
+                        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LandingPage())),
+                        child: Icon(
+                          Icons.arrow_back_ios,
+                          size: 17,
+                        ),
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.blue.shade200,
+                            foregroundColor: Colors.blue.shade800,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            )),
                       ),
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.blue.shade200,
-                          foregroundColor: Colors.blue.shade800,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          )),
                     ),
                   ),
                 ),
@@ -117,15 +122,13 @@ class _LoginState extends State<Login> {
                 height: 45,
                 width: 300,
                 child: ElevatedButton(
-                  onPressed: () {
-                    print("Login Pressed");
-                  },
+                  onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage())),
                   child: Text(
                     "Login",
                     style: GoogleFonts.poppins(
                       letterSpacing: 1,
                       color: Colors.white,
-                      fontSize: 17 
+                      fontSize: 17, 
                     ),
                   ),
                   style: ElevatedButton.styleFrom(

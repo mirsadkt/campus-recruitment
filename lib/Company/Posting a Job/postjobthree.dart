@@ -1,5 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace, sort_child_properties_last, non_constant_identifier_names
 
+import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobfour.dart';
+import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobthreepointfive.dart';
+import 'package:campus_recruitment/Company/Posting%20a%20Job/postjobtwo.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -37,16 +40,19 @@ class _PostJobthreeState extends State<PostJobthree> {
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 10, left: 10),
-                child: Container(
-                  height: 35,
-                  width: 35,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.purple.shade200),
-                  child: Icon(
-                    Icons.arrow_back_ios,
-                    size: 13,
-                    color: Colors.purple.shade600,
+                child: InkWell(
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => PostJobtwo())),
+                  child: Container(
+                    height: 35,
+                    width: 35,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.purple.shade200),
+                    child: Icon(
+                      Icons.arrow_back_ios,
+                      size: 13,
+                      color: Colors.purple.shade600,
+                    ),
                   ),
                 ),
               )
@@ -136,12 +142,17 @@ class _PostJobthreeState extends State<PostJobthree> {
                           fontSize: 15,
                           color: Colors.purple.shade600),
                     ),
-                    Text(
-                      "Per Year",
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 15,
-                          color: Colors.black38),
+                    InkWell(
+                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => PostJobThreepointFive())),
+                      child: Container(
+                        child: Text(
+                          "Per Year",
+                          style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 15,
+                              color: Colors.black38),
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -269,20 +280,23 @@ class _PostJobthreeState extends State<PostJobthree> {
 
               Padding(
                 padding: const EdgeInsets.only(top: 45, bottom: 20),
-                child: Container(
-                  width: 165,
-                  height: 43,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.purple.shade600,
-                  ),
-                  child: Center(
-                    child: Text(
-                      "Next",
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white,
-                          fontSize: 15),
+                child: InkWell(
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => PostJobfour())),
+                  child: Container(
+                    width: 165,
+                    height: 43,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.purple.shade600,
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Next",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white,
+                            fontSize: 15),
+                      ),
                     ),
                   ),
                 ),
